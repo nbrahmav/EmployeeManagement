@@ -8,4 +8,9 @@
   <ItemGroup>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeManagement.DAL\EmployeeManagement.DAL.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
