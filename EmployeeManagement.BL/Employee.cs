@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -25,5 +26,8 @@ namespace EmployeeManagement.BL
         public string Email { get; set; }
 
         public string Designation { get; set; }
+
+       [DisplayName("Full Name")]
+        public string FullName { get { return $"{FirstName} {LastName}"; } }
     }
 }

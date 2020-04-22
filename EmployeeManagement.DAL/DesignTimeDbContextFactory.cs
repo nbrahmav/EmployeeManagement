@@ -15,9 +15,15 @@ namespace EmployeeManagement.DAL
         public AppDbContext CreateDbContext(string[] args)
         {
             
-            IConfigurationRoot configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile(Directory.GetCurrentDirectory() + "/../EmployeeManagement/appsettings.json").Build();
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile(Directory.GetCurrentDirectory() + "/../EmployeeManagement/appsettings.json")
+                .Build();
+
             var builder = new DbContextOptionsBuilder<AppDbContext>();
+
             var connectionString = configuration.GetConnectionString("DefaultConnection");
+
             builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("EmployeeManagement.Migrations"));
             //builder.UseSqlServer(connectionString);
             //, b => b.MigrationsAssembly("EmployeeManagement.Migrations"));
