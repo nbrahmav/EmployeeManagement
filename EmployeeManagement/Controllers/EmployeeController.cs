@@ -33,6 +33,7 @@ namespace EmployeeManagement.Controllers
             return View(employee);
         }
 
+        [HttpGet]
         public IActionResult CreateEmployee(int id = 0)
         {
             return View("Create", new Employee());

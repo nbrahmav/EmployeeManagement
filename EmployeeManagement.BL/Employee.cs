@@ -27,7 +27,10 @@ namespace EmployeeManagement.BL
 
         public string Designation { get; set; }
 
-       [DisplayName("Full Name")]
+        //[Required]
+        public DepartmentType Department { get; set; }
+
+        [DisplayName("Full Name")]
         public string FullName { get { return $"{FirstName} {LastName}"; } }
     }
 }

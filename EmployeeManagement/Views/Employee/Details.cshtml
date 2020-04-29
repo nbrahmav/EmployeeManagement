@@ -1,0 +1,17 @@
+﻿@model Employee
+
+<div>
+    Name: @Model.FirstName + @Model.LastName
+</div>
+<div>
+    @Model.Email
+</div>
+<div>
+    @Model.Designation
+</div>
+<div>
+    @Model.Phone
+</div>
+<div>
+    <a asp-action="Index" asp-controller="Employee">Back to List</a>
+</div>

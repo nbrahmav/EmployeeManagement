@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.BL", "Em
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Migrations", "EmployeeManagement.Migrations\EmployeeManagement.Migrations.csproj", "{AA4CAC4E-EE26-41B9-85D8-E1D5BA18EF2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Tests", "EmployeeManagement.Tests\EmployeeManagement.Tests.csproj", "{5D714E79-43A3-4829-96CA-C0A68E3D04CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +33,9 @@ Global
 		{AA4CAC4E-EE26-41B9-85D8-E1D5BA18EF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA4CAC4E-EE26-41B9-85D8-E1D5BA18EF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA4CAC4E-EE26-41B9-85D8-E1D5BA18EF2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D714E79-43A3-4829-96CA-C0A68E3D04CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D714E79-43A3-4829-96CA-C0A68E3D04CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D714E79-43A3-4829-96CA-C0A68E3D04CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D714E79-43A3-4829-96CA-C0A68E3D04CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
